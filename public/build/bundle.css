@@ -295,7 +295,7 @@
   * Aliased Fontsizes
   */
 
-@media (--smartphone) {
+@media (max-width: 767px) {
   :root {
     --distance-large: 15px;
   --distance-medium: 10px;
@@ -353,42 +353,25 @@ custom media queries is the only allowed media queries
 ```
 */
 
-@custom-media --smartphone (max-width: 767px);
-
 /*
 * custom media query for desktop
 */
-
-@custom-media --desktop (min-width: 767px);
-
-@custom-media --widedesktop (min-width: 940px);
-
-@custom-media --xtrawidedesktop (min-width: 1140px);
 
 /*
 * media-query for ipad
 */
 
-@custom-media --tablet only screen and (min-width: 768px) and (max-width: 1024px);
-
 /*
 * Landscape media-query for ipad
 */
-
-@custom-media --landscape only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape);
 
 /*
 * Portrait media-query for ipad
 */
 
-@custom-media --portrait only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait);
-
 /*
 * ie11 and above media query for
 */
-
-@custom-media --ie only screen and (-ms-high-contrast: active),
-  (-ms-high-contrast: none);
 
 .accordion-tab {
   background: rgb(var(--rgb-color--white));
@@ -881,7 +864,7 @@ a.badge:hover {
   --card-padding: 20px;
 }
 
-@media (--smartphone) {
+@media (max-width: 767px) {
   :root {
     --card-fs-title: 20px;
   --card-fs-title--small: 16px;
@@ -1062,7 +1045,7 @@ a.card:focus {
   font-size: var(--card-fs-title--small);
 }
 
-@media (--ie) {
+@media only screen and (-ms-high-contrast: active),(-ms-high-contrast: none) {
   .card-media .card-icon svg {
     max-height: 40px;
   }
@@ -1388,7 +1371,7 @@ a.card-mode:focus .card-inner {
   --right-pos: calc(var(--button-height) * 1.5);
 }
 
-@media (--smartphone) {
+@media (max-width: 767px) {
   :root {
     --right-pos: 10px;
   }
@@ -2115,7 +2098,7 @@ h6,p {
   --grid-xlarge: 930px;
 }
 
-@media (--smartphone) {
+@media (max-width: 767px) {
   :root {
     --grid-large: 100%;
   --grid-medium: 100%;

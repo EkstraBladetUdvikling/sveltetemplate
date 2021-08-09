@@ -8,6 +8,11 @@ import typescript from '@rollup/plugin-typescript';
 import css from 'rollup-plugin-css-only';
 import { svelteSVG } from 'rollup-plugin-svelte-svg';
 
+import { writeFileSync } from 'fs';
+
+const postcss = require('postcss');
+const postcssCustomMedia = require('postcss-custom-media');
+
 const production = !process.env.ROLLUP_WATCH;
 
 function serve() {
@@ -20,14 +25,10 @@ function serve() {
   return {
     writeBundle() {
       if (server) return;
-      server = require('child_process').spawn(
-        'npm',
-        ['run', 'start', '--', '--dev'],
-        {
-          stdio: ['ignore', 'inherit', 'inherit'],
-          shell: true,
-        }
-      );
+      server = require('child_process').spawn('npm', ['run', 'start', '--', '--dev'], {
+        stdio: ['ignore', 'inherit', 'inherit'],
+        shell: true,
+      });
 
       process.on('SIGTERM', toExit);
       process.on('exit', toExit);
@@ -55,7 +56,13 @@ export default {
     }),
     // we'll extract any component CSS out into
     // a separate file - better for performance
-    css({ output: 'bundle.css' }),
+    css({
+      output: async (style) => {
+        const styles = await postcss([postcssCustomMedia()]).process(style);
+
+        writeFileSync('./public/build/bundle.css', styles.toString());
+      },
+    }),
 
     // If you have external dependencies installed from
     // npm, you'll most likely need these plugins. In
