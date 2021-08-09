@@ -1,6 +1,6 @@
 <script lang="ts">
   import '@ekstra-bladet/designsystem/dist/eb-designsystem.css';
-  import { Button, Icon } from '@ekstra-bladet/designsystem';
+  import { Icon } from '@ekstra-bladet/designsystem';
 
   export let name: string;
 </script>
