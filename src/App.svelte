@@ -1,9 +1,7 @@
 <script lang="ts">
   import '@ekstra-bladet/designsystem/dist/eb-designsystem--utilities.css';
 
-  import { Icon } from '@ekstra-bladet/designsystem';
-  import Button from '@ekstra-bladet/designsystem/src/components/button/Button.svelte';
-  import Accordion from '@ekstra-bladet/designsystem/src/components/accordion/Accordion.svelte';
+  import { Accordion, Badge, Button, Icon } from '@ekstra-bladet/designsystem';
 
   export let name: string;
 
@@ -22,5 +20,10 @@
     </p>
     <Button>Her!</Button>
     <Accordion dataTheme="lightmode" {tabs} />
+    <Badge>Her er et Badge</Badge>
+    <Badge type="primary">primary</Badge>
+    <Badge type="secondary">secondary</Badge>
+    <Badge type="success">success</Badge>
+    <Badge type="danger">danger</Badge>
   </main>
 </div>
