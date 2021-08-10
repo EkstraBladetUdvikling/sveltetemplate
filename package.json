@@ -20,6 +20,7 @@
     "@rollup/plugin-node-resolve": "^11.0.0",
     "@rollup/plugin-typescript": "^8.0.0",
     "@tsconfig/svelte": "^2.0.0",
+    "cssnano": "^5.0.7",
     "postcss": "^8.3.6",
     "postcss-custom-media": "^8.0.0",
     "rollup": "^2.3.4",
@@ -35,7 +36,7 @@
     "typescript": "^4.3.5"
   },
   "dependencies": {
-    "@ekstra-bladet/designsystem": "^0.9.7",
+    "@ekstra-bladet/designsystem": "EkstraBladetUdvikling/eb-designsystem#pull/142/head",
     "sirv-cli": "^1.0.0"
   }
 }

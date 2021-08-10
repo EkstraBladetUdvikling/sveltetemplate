@@ -12,6 +12,7 @@ import { writeFileSync } from 'fs';
 
 const postcss = require('postcss');
 const postcssCustomMedia = require('postcss-custom-media');
+const cssnano = require('cssnano');
 
 const production = !process.env.ROLLUP_WATCH;
 
@@ -48,7 +49,14 @@ export default {
     svelteSVG(),
 
     svelte({
-      preprocess: sveltePreprocess({ sourceMap: !production }),
+      preprocess: sveltePreprocess({
+        defaults: {
+          style: 'css',
+        },
+
+        postcss: true,
+        sourceMap: !production,
+      }),
       compilerOptions: {
         // enable run-time checks when not in production
         dev: !production,
@@ -58,7 +66,7 @@ export default {
     // a separate file - better for performance
     css({
       output: async (style) => {
-        const styles = await postcss([postcssCustomMedia()]).process(style);
+        const styles = await postcss([postcssCustomMedia(), cssnano()]).process(style);
 
         writeFileSync('./public/build/bundle.css', styles.toString());
       },
