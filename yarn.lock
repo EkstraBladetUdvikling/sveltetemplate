@@ -887,9 +887,10 @@
     "@babel/helper-validator-identifier" "^7.14.9"
     to-fast-properties "^2.0.0"
 
-"@ekstra-bladet/designsystem@EkstraBladetUdvikling/eb-designsystem#pull/142/head":
-  version "0.9.7"
-  resolved "https://codeload.github.com/EkstraBladetUdvikling/eb-designsystem/tar.gz/d2749bda91a3d17ae2aa122e271ffb1b9162ddd1"
+"@ekstra-bladet/designsystem@^0.9.8":
+  version "0.9.8"
+  resolved "https://registry.yarnpkg.com/@ekstra-bladet/designsystem/-/designsystem-0.9.8.tgz#6b916e5d4ee7e1e570397b41989947d94747388c"
+  integrity sha512-N8ap9f33qXsUPYnmuqQRVJe9F8yaraa290ka1Mo7V2PZHt18jiYtRhd5k4M2XpqNAqMODm35hzIOUm3VQ5I9iA==
   dependencies:
     "@ekstra-bladet/eb-colors" "^3.0.0"
     "@rollup/plugin-commonjs" "^20.0.0"
