@@ -1,20 +1,29 @@
 <script lang="ts">
-  import '@ekstra-bladet/designsystem/dist/eb-designsystem.css';
-  import { Icon } from '@ekstra-bladet/designsystem';
+  import '@ekstra-bladet/designsystem/dist/eb-designsystem--utilities.css';
+
+  import { Accordion, Badge, Button, Icon } from '@ekstra-bladet/designsystem';
 
   export let name: string;
+
+  let tabs = [{ content: 'flurps', title: 'Step 1' }];
 </script>
 
-<main>
-  <h1><Icon name="ekstrabladet" /> Hello {name}!</h1>
-  <p>
-    Visit the <a href="https://svelte.dev/tutorial">Svelte tutorial</a> to learn
-    how to build Svelte apps.
-  </p>
-  <p>
-    And visit the <a
-      href="https://ekstrabladetudvikling.github.io/eb-designsystem/"
-      >Designsystem documentation</a
-    > to learn how the designsystem works
-  </p>
-</main>
+<div class="flex flex-justify--center">
+  <main class="grid-width--medium">
+    <h1><Icon name="ekstrabladet" /> Hello {name}!</h1>
+    <p>
+      Visit the <a href="https://svelte.dev/tutorial">Svelte tutorial</a> to learn how to build Svelte apps.
+    </p>
+    <p>
+      And visit the <a href="https://ekstrabladetudvikling.github.io/eb-designsystem/">Designsystem documentation</a> to
+      learn how the designsystem works
+    </p>
+    <Button>Her!</Button>
+    <Accordion dataTheme="lightmode" {tabs} />
+    <Badge>Her er et Badge</Badge>
+    <Badge type="primary">primary</Badge>
+    <Badge type="secondary">secondary</Badge>
+    <Badge type="success">success</Badge>
+    <Badge type="danger">danger</Badge>
+  </main>
+</div>

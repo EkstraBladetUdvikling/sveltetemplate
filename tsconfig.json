@@ -1,4 +1,5 @@
 {
   "extends": "@tsconfig/svelte/tsconfig.json",
+
   "include": ["./src/**/*", "./node_modules/@ekstra-bladet/**/*"]
 }
