@@ -894,7 +894,7 @@
     "@babel/helper-validator-identifier" "^7.14.9"
     to-fast-properties "^2.0.0"
 
-"@ekstra-bladet/designsystem@^0.9.8":
+"@ekstra-bladet/designsystem@^0.9.11":
   version "0.9.11"
   resolved "https://registry.yarnpkg.com/@ekstra-bladet/designsystem/-/designsystem-0.9.11.tgz#23fedf3ae8c7640711bf3f3a784e01b305068f0c"
   integrity sha512-g/+Q3xvqaegQ8UlYjmV+rsod2THUcCUUbg+Htg/Vdhr3SG2c49lO7WNP9j8tP3qztxOeCCWLY1E1fyU4jEuTGg==

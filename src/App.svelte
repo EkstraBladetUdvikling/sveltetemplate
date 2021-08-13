@@ -1,5 +1,5 @@
 <script lang="ts">
-  import '@ekstra-bladet/designsystem/dist/eb-designsystem--utilities.css';
+  import '@ekstra-bladet/designsystem/dist/eb-designsystem.css';
 
   import { Accordion, Badge, Button, Icon } from '@ekstra-bladet/designsystem';
 
@@ -18,12 +18,5 @@
       And visit the <a href="https://ekstrabladetudvikling.github.io/eb-designsystem/">Designsystem documentation</a> to
       learn how the designsystem works
     </p>
-    <Button>Her!</Button>
-    <Accordion dataTheme="lightmode" {tabs} />
-    <Badge>Her er et Badge</Badge>
-    <Badge type="primary">primary</Badge>
-    <Badge type="secondary">secondary</Badge>
-    <Badge type="success">success</Badge>
-    <Badge type="danger">danger</Badge>
   </main>
 </div>
