@@ -5,7 +5,7 @@
 
   export let name: string;
 
-  let tabs = [{ content: 'flurps', title: 'Step 1' }];
+  const tabs = [{ content: 'flurps', title: 'Step 1' }];
 </script>
 
 <div class="flex flex-justify--center">

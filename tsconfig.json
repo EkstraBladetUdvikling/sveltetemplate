@@ -1,5 +1,11 @@
 {
   "extends": "@tsconfig/svelte/tsconfig.json",
 
-  "include": ["./src/**/*", "./node_modules/@ekstra-bladet/**/*"]
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+    "moduleResolution": "node",
+    "baseUrl": "./"
+  },
+  "include": ["./src/**/*"],
+  "exclude": ["./node_modules"]
 }

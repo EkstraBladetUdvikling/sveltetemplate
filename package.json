@@ -1,13 +1,21 @@
 {
   "name": "svelte-app",
   "version": "1.0.0",
-  "private": true,
+  "main": "index.js",
+  "license": "MIT",
   "scripts": {
     "build": "rollup -c",
     "dev": "rollup -c -w",
     "start": "sirv public --no-clear",
-    "check": "svelte-check --tsconfig ./tsconfig.json"
+    "check": "svelte-check --tsconfig ./tsconfig.json",
+    "lint": "eslint './src/**/*.{ts,svelte}'",
+    "lint:fix": "eslint --fix './src/**/*.{ts,svelte}'"
   },
+  "browserslist": [
+    "defaults",
+    "not IE 11",
+    "maintained node versions"
+  ],
   "devDependencies": {
     "@babel/core": "^7.15.0",
     "@babel/plugin-external-helpers": "^7.14.5",
@@ -16,27 +24,39 @@
     "@babel/preset-env": "^7.15.0",
     "@babel/runtime": "^7.14.8",
     "@rollup/plugin-babel": "^5.3.0",
-    "@rollup/plugin-commonjs": "^17.0.0",
-    "@rollup/plugin-node-resolve": "^11.0.0",
+    "@rollup/plugin-commonjs": "^20.0.0",
+    "@rollup/plugin-node-resolve": "^13.0.4",
     "@rollup/plugin-typescript": "^8.0.0",
     "@tsconfig/svelte": "^2.0.0",
-    "cssnano": "^5.0.7",
+    "@typescript-eslint/eslint-plugin": "^4.30.0",
+    "@typescript-eslint/parser": "^4.30.0",
+    "cssnano": "^5.0.8",
+    "eslint": "^7.32.0",
+    "eslint-config-standard": "^16.0.3",
+    "eslint-import-resolver-typescript": "^2.4.0",
+    "eslint-plugin-import": "^2.24.2",
+    "eslint-plugin-jsdoc": "^36.0.8",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prefer-arrow": "^1.2.3",
+    "eslint-plugin-promise": "^5.1.0",
+    "eslint-plugin-svelte3": "^3.2.0",
     "postcss": "^8.3.6",
     "postcss-custom-media": "^8.0.0",
-    "rollup": "^2.3.4",
+    "postcss-load-config": "^3.1.0",
+    "rollup": "^2.56.3",
     "rollup-plugin-css-only": "^3.1.0",
     "rollup-plugin-livereload": "^2.0.0",
     "rollup-plugin-svelte": "^7.0.0",
     "rollup-plugin-svelte-svg": "^1.0.0-beta.4",
     "rollup-plugin-terser": "^7.0.0",
-    "svelte": "^3.41.0",
-    "svelte-check": "^2.2.1",
-    "svelte-preprocess": "^4.7.3",
+    "svelte": "^3.42.4",
+    "svelte-check": "^2.2.5",
+    "svelte-preprocess": "^4.8.0",
     "tslib": "^2.3.0",
     "typescript": "^4.3.5"
   },
   "dependencies": {
-    "@ekstra-bladet/designsystem": "^0.9.11",
-    "sirv-cli": "^1.0.0"
+    "@ekstra-bladet/designsystem": "^1.0.1",
+    "sirv-cli": "^1.0.14"
   }
 }
