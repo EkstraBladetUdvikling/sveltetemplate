@@ -23,29 +23,30 @@
     chalk "^2.0.0"
     js-tokens "^4.0.0"
 
-"@ekstra-bladet/designsystem@^2.5.5":
-  version "2.5.5"
-  resolved "https://registry.yarnpkg.com/@ekstra-bladet/designsystem/-/designsystem-2.5.5.tgz#0c5c57d2a19069a5299a204781e328a9c940597a"
-  integrity sha512-ue9V2f71o44PuiQgByPt/ld4MdY1xmUmLE4+El8HQ60mnuAAdJA783W77c/cSjk3NZFsEYkrJ+rOf1A4BE9BZA==
+"@ekstra-bladet/designsystem@3.0.1":
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/@ekstra-bladet/designsystem/-/designsystem-3.0.1.tgz#ee8e6a53846cae605eec8d60922a4b62d4b406c2"
+  integrity sha512-DWdDlNM6vcaO/smcFYH8UyL+BKeGWA15BP3Gbnv5poZD8VeEu1+CksOysPMJKLzW4Nfz6kaYh41JkzxPQ/UcNA==
   dependencies:
     "@ekstra-bladet/eb-colors" "4.0.4"
     "@rollup/plugin-commonjs" "^21.0.1"
     "@rollup/plugin-node-resolve" "^13.0.6"
+    "@rollup/plugin-replace" "^4.0.0"
     "@rollup/plugin-typescript" "^8.3.0"
-    "@tsconfig/svelte" "^2.0.1"
+    "@tsconfig/svelte" "^3.0.0"
     fitty "^2.3.5"
-    prismjs "^1.25.0"
+    prismjs "^1.28.0"
     rollup "^2.60.0"
     rollup-plugin-css-only "^3.1.0"
     rollup-plugin-livereload "^2.0.5"
     rollup-plugin-svelte "^7.1.0"
-    rollup-plugin-svelte-svg "^1.0.0-beta.5"
+    rollup-plugin-svelte-svg "^1.0.0-beta.6"
     rollup-plugin-terser "^7.0.2"
-    sirv-cli "^1.0.14"
-    svelte "^3.44.1"
-    svelte-check "^2.2.9"
-    svelte-preprocess "^4.9.8"
-    svelte-prism "^1.1.3"
+    sirv-cli "^2.0.2"
+    svelte "^3.47.0"
+    svelte-check "^2.7.0"
+    svelte-preprocess "^4.10.6"
+    svelte-prism "^1.1.4"
     svelte-spa-router "^3.2.0"
     tippy.js "^6.3.7"
 
@@ -185,11 +186,6 @@
   version "0.2.0"
   resolved "https://registry.yarnpkg.com/@trysound/sax/-/sax-0.2.0.tgz#cccaab758af56761eb7bf37af6f03f326dd798ad"
   integrity sha512-L7z9BgrNEcYyUYtF+HaEfiS5ebkh9jXqbszz7pC0hRBPaatV0XjSD3+eHrpqFemQfgwiFF0QPIarnIihIDn7OA==
-
-"@tsconfig/svelte@^2.0.1":
-  version "2.0.1"
-  resolved "https://registry.yarnpkg.com/@tsconfig/svelte/-/svelte-2.0.1.tgz#0e8d7caa693e9b2afce5e622c0475bb0fd89c12c"
-  integrity sha512-aqkICXbM1oX5FfgZd2qSSAGdyo/NRxjWCamxoyi3T8iVQnzGge19HhDYzZ6NrVOW7bhcWNSq9XexWFtMzbB24A==
 
 "@tsconfig/svelte@^3.0.0":
   version "3.0.0"
@@ -1473,11 +1469,6 @@ json5@^1.0.1:
   dependencies:
     minimist "^1.2.0"
 
-kleur@^3.0.0:
-  version "3.0.3"
-  resolved "https://registry.yarnpkg.com/kleur/-/kleur-3.0.3.tgz#a79c9ecc86ee1ce3fa6206d1216c501f147fc07e"
-  integrity sha512-eTIzlVOSUR+JxdDFepEYcBMtZ9Qqdef+rnzWdRZuMbOywu5tO2w2N7rqjoANZ5k9vywhL6Br1VRjUIgTQx4E8w==
-
 kleur@^4.1.4:
   version "4.1.4"
   resolved "https://registry.yarnpkg.com/kleur/-/kleur-4.1.4.tgz#8c202987d7e577766d039a8cd461934c01cda04d"
@@ -2012,10 +2003,15 @@ prism-svelte@^0.4.0:
   resolved "https://registry.yarnpkg.com/prism-svelte/-/prism-svelte-0.4.7.tgz#fbc6709450b4e2ed660ddb82c3718817fc584cbe"
   integrity sha512-yABh19CYbM24V7aS7TuPYRNMqthxwbvx6FF/Rw920YbyBWO3tnyPIqRMgHuSVsLmuHkkBS1Akyof463FVdkeDQ==
 
-prismjs@^1.17.1, prismjs@^1.25.0:
+prismjs@^1.17.1:
   version "1.27.0"
   resolved "https://registry.yarnpkg.com/prismjs/-/prismjs-1.27.0.tgz#bb6ee3138a0b438a3653dd4d6ce0cc6510a45057"
   integrity sha512-t13BGPUlFDR7wRB5kQDG4jjl7XeuH6jbJGt11JHPL96qwsEHNX2+68tFXqc1/k+/jALsbSWJKUOT/hcYAZ5LkA==
+
+prismjs@^1.28.0:
+  version "1.28.0"
+  resolved "https://registry.yarnpkg.com/prismjs/-/prismjs-1.28.0.tgz#0d8f561fa0f7cf6ebca901747828b149147044b6"
+  integrity sha512-8aaXdYvl1F7iC7Xm1spqSaY/OJBpYW3v+KJ+F17iYxvdc8sfjW194COK5wVhMZX45tGteiBQgdvD/nhxcRwylw==
 
 punycode@^2.1.0:
   version "2.1.1"
@@ -2108,7 +2104,7 @@ rollup-plugin-livereload@^2.0.0, rollup-plugin-livereload@^2.0.5:
   dependencies:
     livereload "^0.9.1"
 
-rollup-plugin-svelte-svg@^1.0.0-beta.5, rollup-plugin-svelte-svg@^1.0.0-beta.6:
+rollup-plugin-svelte-svg@^1.0.0-beta.6:
   version "1.0.0-beta.6"
   resolved "https://registry.yarnpkg.com/rollup-plugin-svelte-svg/-/rollup-plugin-svelte-svg-1.0.0-beta.6.tgz#0ee3deae2329abb1c90f50b83598aaf0bb0559fc"
   integrity sha512-6uJb9kuaqK6p+DvkgphhGN18wvUzdT6h7MQC2B8P1omi9omC9lQC54pwaot21h6z9ibhGPLG9a1XFLeDQth/kg==
@@ -2222,20 +2218,6 @@ side-channel@^1.0.4:
     get-intrinsic "^1.0.2"
     object-inspect "^1.9.0"
 
-sirv-cli@^1.0.14:
-  version "1.0.14"
-  resolved "https://registry.yarnpkg.com/sirv-cli/-/sirv-cli-1.0.14.tgz#4bc60421b3de9caea80ccd292b5004aca4ce3c81"
-  integrity sha512-yyUTNr984ANKDloqepkYbBSqvx3buwYg2sQKPWjSU+IBia5loaoka2If8N9CMwt8AfP179cdEl7kYJ//iWJHjQ==
-  dependencies:
-    console-clear "^1.1.0"
-    get-port "^3.2.0"
-    kleur "^3.0.0"
-    local-access "^1.0.1"
-    sade "^1.6.0"
-    semiver "^1.0.0"
-    sirv "^1.0.13"
-    tinydate "^1.0.0"
-
 sirv-cli@^2.0.2:
   version "2.0.2"
   resolved "https://registry.yarnpkg.com/sirv-cli/-/sirv-cli-2.0.2.tgz#4b25ff8dc577be41588357c1f87fbf264a1bba55"
@@ -2249,15 +2231,6 @@ sirv-cli@^2.0.2:
     semiver "^1.0.0"
     sirv "^2.0.0"
     tinydate "^1.0.0"
-
-sirv@^1.0.13:
-  version "1.0.19"
-  resolved "https://registry.yarnpkg.com/sirv/-/sirv-1.0.19.tgz#1d73979b38c7fe91fcba49c85280daa9c2363b49"
-  integrity sha512-JuLThK3TnZG1TAKDwNIqNq6QA2afLOCcm+iE8D1Kj3GA40pSPsxQjjJl0J8X3tsR7T+CP1GavpzLwYkgVLWrZQ==
-  dependencies:
-    "@polka/url" "^1.0.0-next.20"
-    mrmime "^1.0.0"
-    totalist "^1.0.0"
 
 sirv@^2.0.0:
   version "2.0.2"
@@ -2401,7 +2374,7 @@ supports-preserve-symlinks-flag@^1.0.0:
   resolved "https://registry.yarnpkg.com/supports-preserve-symlinks-flag/-/supports-preserve-symlinks-flag-1.0.0.tgz#6eda4bd344a3c94aea376d4cc31bc77311039e09"
   integrity sha512-ot0WnXS9fgdkgIcePe6RHNk1WA8+muPa6cSjeR3V8K27q9BB1rTE3R1p7Hv0z1ZyAc8s6Vvv8DIyWf681MAt0w==
 
-svelte-check@^2.2.9, svelte-check@^2.4.6:
+svelte-check@^2.4.6:
   version "2.4.6"
   resolved "https://registry.yarnpkg.com/svelte-check/-/svelte-check-2.4.6.tgz#dfdb6b4a68d9b2cececdedd4e17d895eb82314b3"
   integrity sha512-luzdly7RJhyXucQe8ID/7CqDgXdMrPYXmyZBjCbp+cixzTopZotuWevrB5hWDOnOU19m2cyetigIIa7WDHnCmQ==
@@ -2416,7 +2389,21 @@ svelte-check@^2.2.9, svelte-check@^2.4.6:
     svelte-preprocess "^4.0.0"
     typescript "*"
 
-svelte-preprocess@^4.0.0, svelte-preprocess@^4.10.4, svelte-preprocess@^4.9.8:
+svelte-check@^2.7.0:
+  version "2.7.0"
+  resolved "https://registry.yarnpkg.com/svelte-check/-/svelte-check-2.7.0.tgz#10d579dc89bf2e145a04786cc9fa8dabfb018a2a"
+  integrity sha512-GrvG24j0+i8AOm0k0KyJ6Dqc+TAR2yzB7rtS4nljHStunVxCTr/1KYlv4EsOeoqtHLzeWMOd5D2O6nDdP/yw4A==
+  dependencies:
+    chokidar "^3.4.1"
+    fast-glob "^3.2.7"
+    import-fresh "^3.2.1"
+    picocolors "^1.0.0"
+    sade "^1.7.4"
+    source-map "^0.7.3"
+    svelte-preprocess "^4.0.0"
+    typescript "*"
+
+svelte-preprocess@^4.0.0, svelte-preprocess@^4.10.4:
   version "4.10.4"
   resolved "https://registry.yarnpkg.com/svelte-preprocess/-/svelte-preprocess-4.10.4.tgz#308a410266bfc55b4e608da8d552b63580141260"
   integrity sha512-fuwol0N4UoHsNQolLFbMqWivqcJ9N0vfWO9IuPAiX/5okfoGXURyJ6nECbuEIv0nU3M8Xe2I1ONNje2buk7l6A==
@@ -2428,10 +2415,22 @@ svelte-preprocess@^4.0.0, svelte-preprocess@^4.10.4, svelte-preprocess@^4.9.8:
     sorcery "^0.10.0"
     strip-indent "^3.0.0"
 
-svelte-prism@^1.1.3:
-  version "1.1.3"
-  resolved "https://registry.yarnpkg.com/svelte-prism/-/svelte-prism-1.1.3.tgz#7a2c0d268d9eab2678f60b60c0a13187f4cda25f"
-  integrity sha512-VlaafD4avfftZU4NKmCP44slFdAE7KvQ2cNTIqtA0G1nCMfA6zKtZiTdAzlEnYSAKzxQTOzfOqRS0BgVCGaOoA==
+svelte-preprocess@^4.10.6:
+  version "4.10.6"
+  resolved "https://registry.yarnpkg.com/svelte-preprocess/-/svelte-preprocess-4.10.6.tgz#5f9a53e7ed3b85fc7e0841120c725b76ac5a1ba8"
+  integrity sha512-I2SV1w/AveMvgIQlUF/ZOO3PYVnhxfcpNyGt8pxpUVhPfyfL/CZBkkw/KPfuFix5FJ9TnnNYMhACK3DtSaYVVQ==
+  dependencies:
+    "@types/pug" "^2.0.4"
+    "@types/sass" "^1.16.0"
+    detect-indent "^6.0.0"
+    magic-string "^0.25.7"
+    sorcery "^0.10.0"
+    strip-indent "^3.0.0"
+
+svelte-prism@^1.1.4:
+  version "1.1.4"
+  resolved "https://registry.yarnpkg.com/svelte-prism/-/svelte-prism-1.1.4.tgz#4962094d6793bcda8e0370fbceeb7ddee61f4375"
+  integrity sha512-2DK6H614ITo4P6qv+FsFs5eMxN8oGo+TDgKuCTaNqr5rlNbRFlTj4FcrRpjDT3TuU0OCkpdHy7wQB6bS8r3NLg==
   dependencies:
     prism-svelte "^0.4.0"
     prismjs "^1.17.1"
@@ -2443,10 +2442,15 @@ svelte-spa-router@^3.2.0:
   dependencies:
     regexparam "2.0.0"
 
-svelte@^3.44.1, svelte@^3.46.4:
+svelte@^3.46.4:
   version "3.46.4"
   resolved "https://registry.yarnpkg.com/svelte/-/svelte-3.46.4.tgz#0c46bc4a3e20a2617a1b7dc43a722f9d6c084a38"
   integrity sha512-qKJzw6DpA33CIa+C/rGp4AUdSfii0DOTCzj/2YpSKKayw5WGSS624Et9L1nU1k2OVRS9vaENQXp2CVZNU+xvIg==
+
+svelte@^3.47.0:
+  version "3.47.0"
+  resolved "https://registry.yarnpkg.com/svelte/-/svelte-3.47.0.tgz#ba46fe4aea99fc650d6939c215cd4694f5325a19"
+  integrity sha512-4JaJp3HEoTCGARRWZQIZDUanhYv0iyoHikklVHVLH9xFE9db22g4TDv7CPeNA8HD1JgjXI1vlhR1JZvvhaTu2Q==
 
 svgo@^2.3.1, svgo@^2.7.0:
   version "2.8.0"
@@ -2499,11 +2503,6 @@ to-regex-range@^5.0.1:
   integrity sha512-65P7iz6X5yEr1cwcgvQxbbIw7Uk3gOy5dIdtZ4rDveLqhrdJP+Li/Hx6tyK0NEb+2GCyneCMJiGqrADCSNk8sQ==
   dependencies:
     is-number "^7.0.0"
-
-totalist@^1.0.0:
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/totalist/-/totalist-1.1.0.tgz#a4d65a3e546517701e3e5c37a47a70ac97fe56df"
-  integrity sha512-gduQwd1rOdDMGxFG1gEvhV88Oirdo2p+KjoYFU7k2g+i7n6AFFbDQ5kMPUsW0pNbfQsB/cwXvT1i4Bue0s9g5g==
 
 totalist@^3.0.0:
   version "3.0.0"
