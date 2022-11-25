@@ -51,9 +51,7 @@ export default {
 
     svelte({
       preprocess: sveltePreprocess({
-        defaults: {
-          style: 'css',
-        },
+        style: 'css',
 
         postcss: true,
         sourceMap: !production,

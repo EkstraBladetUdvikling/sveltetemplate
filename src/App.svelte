@@ -1,7 +1,7 @@
 <script lang="ts">
   import '@ekstra-bladet/designsystem/css/designsystem.css';
 
-  import { Accordion, Badge, Button, Icon } from '@ekstra-bladet/designsystem';
+  import { Icon } from '@ekstra-bladet/designsystem';
 
   export let name: string;
 
