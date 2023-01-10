@@ -5,7 +5,7 @@
   "license": "MIT",
   "scripts": {
     "build": "rollup -c --bundleConfigAsCjs",
-    "dev": "rollup -c -w",
+    "dev": "rollup -c -w --bundleConfigAsCjs",
     "start": "sirv public --no-clear",
     "check": "svelte-check --tsconfig ./tsconfig.json",
     "lint": "eslint './src/**/*.{ts,svelte}'",
